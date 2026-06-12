@@ -16,7 +16,14 @@ return {
         { "<leader>fb", builtin.buffers, desc = "Buffers" },
         { "<leader>fh", builtin.help_tags, desc = "Help Tags" },
       })
+      wk.add({
+          { "<leader>l", group = "LSP" },
+          { "<leader>e", group = "Diagnostics" },
+          { "<leader>ee", desc = "Show error" },
+          { "<leader>eq", desc = "List diagnostics" },
+          })
 
 
-  },
+   end}
+
 }
